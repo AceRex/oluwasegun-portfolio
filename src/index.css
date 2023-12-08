@@ -9,8 +9,9 @@
   }
   body {
     margin: 0;
-    background-color: #1a1a40;
+    @apply dark:bg-ar_color1 bg-ar_neutral;
+  }
+  a {
+    @apply dark:text-ar_neutral text-ar_color1 cursor-pointer w-[25%];
   }
 }
-
-/* colors 270082 7A0BC0 FA58B6 */
