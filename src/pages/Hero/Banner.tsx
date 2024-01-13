@@ -1,9 +1,11 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+// @ts-ignore
+import ProfileImage from "../../assets/Web.png";
 
 function Banner() {
   return (
-    <div className="p-12 flex">
+    <div className="p-12 flex content-center">
       <div className="w-[45%]">
         <span className="uppercase font-semibold dark:text-ar_color2 text-ar_neutral text-sm bg-ar_color4 rounded-md p-3">
           💡 software developer | Creative Designer
@@ -20,6 +22,9 @@ function Banner() {
             repeat={Infinity}
           />
         </p>
+      </div>
+      <div className="w-[45%]">
+        <img src={ProfileImage} className="w-25" />
       </div>
     </div>
   );
