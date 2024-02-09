@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div id="reader" className="container m-auto">
       <Hero />
-      {/* <AboutMe /> */}
+      <AboutMe />
    
     </div>
   );
