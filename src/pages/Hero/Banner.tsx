@@ -10,7 +10,7 @@ function Banner() {
         <span className="uppercase h-[20vh] font-semibold dark:text-ar_color2 text-ar_neutral text-sm bg-ar_color4 rounded-md p-3">
           💡 software developer | Creative Designer
         </span>
-        <p className="dark:text-ar_neutral h-[60vh] text-ar_color2 text-7xl font-bold pt-5 leading-tight">
+        <p className=" h-[60vh] text-7xl font-bold pt-5 leading-tight">
           <TypeAnimation
             sequence={[
               `Hi there 👋🏾,\nI am Are Oluwasegun Johnson...`,

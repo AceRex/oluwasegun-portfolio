@@ -8,6 +8,7 @@ export default function Header() {
       </p>
       <div className="justify-between text-center flex w-[50%] text-sm">
         <a href="#about_me">About Me</a>
+        <a href="#my_skill">My Skill</a>
         <a href="#">Projects</a>
         <a href="#">Contact</a>
         <a href="#">My CV</a>

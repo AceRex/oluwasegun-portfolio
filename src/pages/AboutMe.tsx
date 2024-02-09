@@ -7,10 +7,10 @@ function AboutMe() {
       className="p-12 grid grid-flow-col grid-cols-3 gap-8"
     >
       <div className="">
-        <h2 className="dark:text-ar_neutral text-right text-ar_color2 text-7xl font-extrabold bg-ar_color4 p-8 rounded-lg">
+        <h2 className="text-right text-7xl font-extrabold bg-ar_color4 p-8 rounded-lg">
           ABOUT ME
         </h2>
-        <p className="dark:text-ar_neutral text-ar_color2 text-justify text-lg mt-4 font-light">
+        <p className="text-justify text-lg mt-4 font-light">
           <span className="text-3xl font-bold">I</span> am a self-taught
           enthusiast in software development, passionate about creating software
           that provides equal opportunities to everyone, regardless of their
@@ -22,7 +22,7 @@ function AboutMe() {
         </p>
       </div>
       <div className="">
-        <p className="dark:text-ar_neutral text-ar_color2 text-justify text-lg mt-4 font-light">
+        <p className="text-justify text-lg mt-4 font-light">
           <span className="text-3xl font-bold">A</span>s a versatile software
           developer, I possess a diverse set of skills. I am an expert in the
           MERN stack (MongoDB, Express.js, React, and Node.js), TypeScript,
@@ -37,7 +37,7 @@ function AboutMe() {
         </p>
       </div>
       <div className="">
-        <p className="dark:text-ar_neutral text-ar_color2 text-justify text-lg mt-4 font-light">
+        <p className="text-justify text-lg mt-4 font-light">
           <span className="text-3xl font-bold">W</span>ith my well-rounded skill
           set and eagerness to take on new challenges, I am confident in my
           ability to help any team or organization create polished and robust
