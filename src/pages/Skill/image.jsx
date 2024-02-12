@@ -12,11 +12,17 @@ import TS from "../../assets/logopack/typescript.png";
 import Node from "../../assets/logopack/nodejs.png";
 import Nest from "../../assets/logopack/nestjs.png";
 import MongoDb from "../../assets/logopack/mongoDb.png";
-import Express from "../../assets/logopack/Expressjs.png";
+import Express from "../../assets/logopack/Expressjs.webp";
 import Git from "../../assets/logopack/Github.png";
 import HTML from "../../assets/logopack/html5.webp";
 import Material from "../../assets/logopack/material.png";
 import AntD from "../../assets/logopack/antd.png";
+import Figma from "../../assets/logopack/figma.png";
+import AI from "../../assets/logopack/illustrator.png";
+import PS from "../../assets/logopack/ps.png";
+import Corel from "../../assets/logopack/corel.png";
+import SQL from "../../assets/logopack/sql.png";
+import No_SQL from "../../assets/logopack/nosql.png";
 
 export const Frontend_Images = [
   {
@@ -94,5 +100,29 @@ export const Frontend_Images = [
   {
     id: "html",
     img: HTML,
+  },
+  {
+    id: "figma",
+    img: Figma,
+  },
+  {
+    id: "psd",
+    img: PS,
+  },
+  {
+    id: "AI",
+    img: AI,
+  },
+  {
+    id: "corel",
+    img: Corel,
+  },
+  {
+    id: "sql",
+    img: SQL,
+  },
+  {
+    id: "no_sql",
+    img: No_SQL,
   },
 ];
