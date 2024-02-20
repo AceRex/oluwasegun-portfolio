@@ -23,6 +23,7 @@ import PS from "../../assets/logopack/ps.png";
 import Corel from "../../assets/logopack/corel.png";
 import SQL from "../../assets/logopack/sql.png";
 import No_SQL from "../../assets/logopack/nosql.png";
+import Socket_io from "../../assets/logopack/socket-io.png"
 
 export const Frontend_Images = [
   {
@@ -124,5 +125,8 @@ export const Frontend_Images = [
   {
     id: "no_sql",
     img: No_SQL,
+  }, {
+    id: "socket_io",
+    img: Socket_io,
   },
 ];
