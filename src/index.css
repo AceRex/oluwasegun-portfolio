@@ -12,7 +12,7 @@
     @apply dark:bg-ar_color1 bg-ar_neutral;
   }
   a {
-    @apply dark:text-ar_neutral text-ar_color1 cursor-pointer w-[25%];
+    @apply dark:text-ar_neutral text-ar_color1 cursor-pointer;
   }
   h1,
   h2,
@@ -23,5 +23,26 @@
   p,
   span {
     @apply dark:text-ar_neutral text-ar_color1;
+  }
+  .rotating-curved-text {
+    -webkit-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;
+  }
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
   }
 }
