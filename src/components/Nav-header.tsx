@@ -8,7 +8,7 @@ export default function NavHeader() {
   return (
     <div className="flex flex-row gap-5 justify-between">
       {/* Nav Header */}
-      <div className="w-[90%] p-1 py-0 bg-ar_neutral/10 backdrop-blur-lg rounded-lg flex flex-row justify-between items-center">
+      <div className="w-[95%] p-1 py-0 bg-ar_neutral/10 backdrop-blur-lg rounded-lg flex flex-row justify-between items-center">
         <div className="w-[95%] flex flex-row gap-1 items-center">
           <div className="w-[70px] h-[70px] overflow-hidden p-3">
             <img
@@ -26,8 +26,8 @@ export default function NavHeader() {
           <MdLightMode size={25} />
         </div>
       </div>
-      <div className="w-[10%] py-0">
-        <div className="w-[70%] flex items-center h-[100%] bg-ar_neutral/20 text-center text-ar_neutral/80 rounded-lg p-5">
+      <div className="w-[5%] py-0">
+        <div className="w-[100%] flex items-center h-[100%] bg-ar_neutral/20 text-center text-ar_neutral/80 rounded-lg p-3 text-2xl">
           <HiMenuAlt3 size={30} />
         </div>
       </div>

@@ -26,7 +26,7 @@ import { MdOutlinePhoneInTalk } from "react-icons/md";
 
 export default function MainView() {
   return (
-    <div className="w-[90%] flex flex-col gap-7 p-12 bg-ar_neutral/10 backdrop-blur-lg rounded-lg">
+    <div className="w-[95%] flex flex-col gap-7 p-12 bg-ar_neutral/10 backdrop-blur-lg rounded-lg">
       <div className="flex flex-row gap-12 w-[100%] h-[90%] overflow-hidden">
         <div className="flex flex-col w-[75%] ">
           <p className="flex flex-row gap-2 text-ar_neutral/70 font-normal">

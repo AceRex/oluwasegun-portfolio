@@ -7,14 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { AiOutlineLinkedin } from "react-icons/ai";
 
 export default function SideProfile() {
-  const downloadFile = () => {
-    const link = document.createElement('a');
-    link.download = "ARE_Oluwasegun_CV.pdf";
-    link.href = "../assets/CV/AREOLUWASEGUNCV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  
   return (
     <>
       <div className=" w-[200px] h-[200px] mt-5 rounded-lg overflow-hidden m-auto bg-ar_color3">
@@ -36,7 +29,7 @@ export default function SideProfile() {
         <button className="bg-ar_color4 py-3 px-4 rounded-lg text-ar_neutral font-semibold w-[50%]">
           Hire Me!
         </button>
-        <a href="../assets/CV/AREOLUWASEGUNCV.pdf" download={"ARE_Oluwasegun_CV"} onClick={downloadFile} className="border border-ar_neutral/40 py-4 px-3 rounded-lg text-center text-ar_neutral/70 font-semibold w-[50%]">
+        <a href="/assets/CV/AREOLUWASEGUNCV.pdf" download={"ARE_Oluwasegun_CV"} className="border border-ar_neutral/40 py-4 px-3 rounded-lg text-center text-ar_neutral/70 font-semibold w-[50%]">
           Download CV
         </a>
       </div>

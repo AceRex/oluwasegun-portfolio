@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SideProfile from "../../components/side-profile.tsx";
 import NavHeader from "../../components/Nav-header.tsx";
 import MainView from "./mainView.tsx";
+import ViewSideNav from "./ViewsSideNav.tsx";
 
 function Hero() {
   // const [color, setColor] = useState("#FA58B6");
@@ -15,9 +16,7 @@ function Hero() {
         <NavHeader />
         <div className="flex flex-row gap-5 mt-5 h-[85vh]">
           <MainView />
-          <div className="w-[10%] p-5 bg-ar_neutral/10 backdrop-blur-lg rounded-lg">
-            something
-          </div>
+          <ViewSideNav/>
         </div>
       </div>
     </div>
