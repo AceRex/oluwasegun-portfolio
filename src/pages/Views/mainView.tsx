@@ -21,66 +21,101 @@ import {
   tspanProps,
   ellipseProps,
 } from "./roundedTextProperty/roundedTextEffectPpt.tsx";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { MdOutlinePhoneInTalk } from "react-icons/md";
 
 export default function MainView() {
   return (
-    <div className="w-[90%] flex flex-row gap-12 p-12 bg-ar_neutral/10 backdrop-blur-lg rounded-lg">
-      <div className="flex flex-col w-[75%] ">
-        <p className="flex flex-row gap-2 text-ar_neutral/70 font-normal">
-          <IoHandLeftOutline size={20} className="text-ar_color4" /> Hi there!
-        </p>
-        <p className="font-light h-[50%] overflow-hidden py-4 leading-none">
-          <TypeAnimation
-            sequence={[
-              `I turn beautiful designs into functional realities, `,
-              1000,
-              "I create Seamless view that works on any device.",
-              1000,
-              "Craft an unified experience: Linking backend to frontend.",
-              1000,
-              "Empower with backend API creation.",
-              1000,
-              "Proficient in developing desktop, mobile, and web applications.",
-              1000,
-              "Expertly utilize state management technologies effectively.",
-              1000,
-              "Feel free to call me Rex",
-              2000,
-            ]}
-            speed={50}
-            style={{ fontSize: "3rem" }}
-            repeat={Infinity}
+    <div className="w-[90%] flex flex-col gap-7 p-12 bg-ar_neutral/10 backdrop-blur-lg rounded-lg">
+      <div className="flex flex-row gap-12 w-[100%] h-[90%] overflow-hidden">
+        <div className="flex flex-col w-[75%] ">
+          <p className="flex flex-row gap-2 text-ar_neutral/70 font-normal">
+            <IoHandLeftOutline size={20} className="text-ar_color4" /> Hi there!
+          </p>
+          <p className="font-light py-4 leading-none">
+            <TypeAnimation
+              sequence={[
+                `I turn beautiful designs into functional realities, `,
+                1000,
+                "I create Seamless view that works on any device.",
+                1000,
+                "Craft an unified experience: Linking backend to frontend.",
+                1000,
+                "Empower with backend API creation.",
+                1000,
+                "Proficient in developing desktop, mobile, and web applications.",
+                1000,
+                "Expertly utilize state management technologies effectively.",
+                1000,
+                "Feel free to call me Rex",
+                2000,
+              ]}
+              speed={50}
+              style={{ fontSize: "3rem" }}
+              repeat={Infinity}
+            />
+          </p>
+        </div>
+        <div className="w-[35%] relative flex justify-center text-ar_neutral">
+          {/* @ts-ignore */}
+          <ReactCurvedText
+            width={width}
+            height={height}
+            cx={cx}
+            cy={cy}
+            rx={rx}
+            ry={ry}
+            startOffset={startOffset}
+            reversed={reversed}
+            text={text}
+            textProps={textProps}
+            textPathProps={textPathProps}
+            tspanProps={tspanProps}
+            ellipseProps={ellipseProps}
+            svgProps={{ className: "rotating-curved-text absolute " }}
           />
-        </p>
+          <motion.img
+            className="absolute top-8 w-[180px]"
+            src={Logo}
+            alt="Your Logo"
+            initial={{ rotate: 0 }}
+            animate={{
+              rotate: [0, 360],
+            }}
+            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+          />
+        </div>
       </div>
-      <div className="w-[35%] relative flex justify-center text-ar_neutral">
-        {/* @ts-ignore */}
-        <ReactCurvedText
-          width={width}
-          height={height}
-          cx={cx}
-          cy={cy}
-          rx={rx}
-          ry={ry}
-          startOffset={startOffset}
-          reversed={reversed}
-          text={text}
-          textProps={textProps}
-          textPathProps={textPathProps}
-          tspanProps={tspanProps}
-          ellipseProps={ellipseProps}
-          svgProps={{ className: "rotating-curved-text absolute " }}
-        />
-        <motion.img
-          className="absolute top-8 w-[180px]"
-          src={Logo}
-          alt="Your Logo"
-          initial={{ rotate: 0 }}
-          animate={{
-            rotate: [0, 360],
-          }}
-          transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-        />
+      <div className="flex flex-col rounded-lg p-4 bg-ar_color1">
+        <p>{"<"}<span className="text-ar_color4">{"head"}</span>{">"}</p>
+        <p className="ml-8">{"<"}<span className="text-ar_color4">title</span>{">"}<span className="text-[#2dd4bf]">{`My Portfolio`}</span>{"</"}<span className="text-ar_color4">title</span>{">"}</p>
+        <p className="ml-8">{"<"}<span className="text-ar_color4">link</span>{` rel="Hire_Me" href="`}<span className="text-[#f59e0b]">contact_below</span>{`"/>`}</p>
+        <p>{"</"}<span className="text-ar_color4">{"head"}</span>{">"}</p>
+        <p>{"<"}<span className="text-ar_color4">{"body"}</span>{">"}</p>
+      </div>
+      <div className="flex flex-row gap-5">
+        <div className="w-[60%] flex flex-row items-center">
+          <div className="w-[20%] text-ar_color4">
+            <MdOutlineMarkEmailUnread size={60} />
+          </div>
+          <div className="w-[80%] flex flex-col text-lg text-ar_color4">
+            <a href="mailto: johnsonare2207@gmail.com">
+              Johnsonare2207@gmail.com
+            </a>
+            <a href="mailto: johnsonare0722@gmail.com">
+              Johnsonare0722@gmail.com
+            </a>
+          </div>
+        </div>
+        <div className="w-[40%] flex flex-row items-center">
+          <div className="w-[20%] text-ar_color4">
+            <MdOutlinePhoneInTalk size={50} />
+          </div>
+          <div className="w-[80%] flex flex-col text-lg text-ar_color4">
+            <a href="tel:+2347035042130">+234 703 504 2130</a>
+            <a href="tel:+2348088735524">+234 808 873 5524</a>
+          </div>
+        </div>
       </div>
     </div>
   );
