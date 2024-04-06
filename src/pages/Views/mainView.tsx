@@ -30,9 +30,6 @@ export default function MainView() {
   const {theme} = useTheme();
   const [chn, setChn ] = useState(textPathProps);
 
-  // if(theme != 'dark'){
-  //   setChn(darktextPathProps)
-  // }
   return (
     <div className="w-[95%] flex flex-col gap-7 p-12 dark:bg-ar_neutral/10 bg-ar_neutral backdrop-blur-lg rounded-lg">
       <div className="flex flex-row gap-12 w-[100%] h-[90%] overflow-hidden">
