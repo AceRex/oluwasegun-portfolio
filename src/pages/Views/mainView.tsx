@@ -4,7 +4,8 @@ import { IoHandLeftOutline } from "react-icons/io5";
 import { TypeAnimation } from "react-type-animation";
 import ReactCurvedText from "react-curved-text";
 // @ts-ignore
-import Logo from "../../assets/aceLogos/ace2.png";
+import Logo from "../../assets/aceLogos/ace3.png";
+import LogoW from "../../assets/aceLogos/ace2.png";
 import {
   width,
   height,
@@ -20,22 +21,24 @@ import {
   textPathProps,
   tspanProps,
   ellipseProps,
-  darktextPathProps
 } from "./roundedTextProperty/roundedTextEffectPpt.tsx";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { useTheme } from "../../UseContext/context.tsx";
 
 export default function MainView() {
-  const {theme} = useTheme();
-  const [chn, setChn ] = useState(textPathProps);
+  const { theme } = useTheme();
 
   return (
     <div className="w-[95%] flex flex-col gap-7 p-12 dark:bg-ar_neutral/10 bg-ar_neutral backdrop-blur-lg rounded-lg">
       <div className="flex flex-row gap-12 w-[100%] h-[90%] overflow-hidden">
         <div className="flex flex-col w-[75%] ">
           <p className="flex flex-row gap-2 dark:text-ar_neutral/70 text-ar_color4 font-normal">
-            <IoHandLeftOutline size={20} className="dark:text-ar_color4 text-ar_color3" /> Hi there!
+            <IoHandLeftOutline
+              size={20}
+              className="dark:text-ar_color4 text-ar_color3"
+            />{" "}
+            Hi there!
           </p>
           <p className="font-light py-4 leading-none">
             <TypeAnimation
@@ -74,29 +77,68 @@ export default function MainView() {
             reversed={reversed}
             text={text}
             textProps={textProps}
-            textPathProps={chn}
+            textPathProps={textPathProps}
             tspanProps={tspanProps}
             ellipseProps={ellipseProps}
             svgProps={{ className: "rotating-curved-text absolute " }}
           />
-          <motion.img
-            className="absolute top-8 w-[180px]"
-            src={Logo}
-            alt="Your Logo"
-            initial={{ rotate: 0 }}
-            animate={{
-              rotate: [0, 360],
-            }}
-            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-          />
+          {theme != "dark" ? (
+            <motion.img
+              className="absolute top-8 w-[180px]"
+              src={Logo}
+              alt="Your Logo"
+              initial={{ rotate: 0 }}
+              animate={{
+                rotate: [0, 360],
+              }}
+              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+            />
+          ) : (
+            <motion.img
+              className="absolute top-8 w-[180px]"
+              src={LogoW}
+              alt="Your Logo"
+              initial={{ rotate: 0 }}
+              animate={{
+                rotate: [0, 360],
+              }}
+              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+            />
+          )}
         </div>
       </div>
       <div className="flex flex-col rounded-lg p-4 bg-ar_color1">
-        <p>{"<"}<span className="text-ar_color4">{"head"}</span>{">"}</p>
-        <p className="ml-8">{"<"}<span className="text-ar_color4">title</span>{">"}<span className="text-[#2dd4bf]">{`My Portfolio`}</span>{"</"}<span className="text-ar_color4">title</span>{">"}</p>
-        <p className="ml-8">{"<"}<span className="text-ar_color4">link</span>{` rel="Hire_Me" href="`}<span className="text-[#f59e0b]">contact_below</span>{`"/>`}</p>
-        <p>{"</"}<span className="text-ar_color4">{"head"}</span>{">"}</p>
-        <p>{"<"}<span className="text-ar_color4">{"body"}</span>{">"}</p>
+        <p>
+          {"<"}
+          <span className="text-ar_color4">{"head"}</span>
+          {">"}
+        </p>
+        <p className="ml-8">
+          {"<"}
+          <span className="text-ar_color4">title</span>
+          {">"}
+          <span className="text-[#2dd4bf]">{`My Portfolio`}</span>
+          {"</"}
+          <span className="text-ar_color4">title</span>
+          {">"}
+        </p>
+        <p className="ml-8">
+          {"<"}
+          <span className="text-ar_color4">link</span>
+          {` rel="Hire_Me" href="`}
+          <span className="text-[#f59e0b]">contact_below</span>
+          {`"/>`}
+        </p>
+        <p>
+          {"</"}
+          <span className="text-ar_color4">{"head"}</span>
+          {">"}
+        </p>
+        <p>
+          {"<"}
+          <span className="text-ar_color4">{"body"}</span>
+          {">"}
+        </p>
       </div>
       <div className="flex flex-row gap-5">
         <div className="w-[60%] flex flex-row items-center">
