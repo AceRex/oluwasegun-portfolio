@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { IoHandLeftOutline } from "react-icons/io5";
 import { TypeAnimation } from "react-type-animation";
@@ -20,17 +20,25 @@ import {
   textPathProps,
   tspanProps,
   ellipseProps,
+  darktextPathProps
 } from "./roundedTextProperty/roundedTextEffectPpt.tsx";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
+import { useTheme } from "../../UseContext/context.tsx";
 
 export default function MainView() {
+  const {theme} = useTheme();
+  const [chn, setChn ] = useState(textPathProps);
+
+  // if(theme != 'dark'){
+  //   setChn(darktextPathProps)
+  // }
   return (
-    <div className="w-[95%] flex flex-col gap-7 p-12 bg-ar_neutral/10 backdrop-blur-lg rounded-lg">
+    <div className="w-[95%] flex flex-col gap-7 p-12 dark:bg-ar_neutral/10 bg-ar_neutral backdrop-blur-lg rounded-lg">
       <div className="flex flex-row gap-12 w-[100%] h-[90%] overflow-hidden">
         <div className="flex flex-col w-[75%] ">
-          <p className="flex flex-row gap-2 text-ar_neutral/70 font-normal">
-            <IoHandLeftOutline size={20} className="text-ar_color4" /> Hi there!
+          <p className="flex flex-row gap-2 dark:text-ar_neutral/70 text-ar_color4 font-normal">
+            <IoHandLeftOutline size={20} className="dark:text-ar_color4 text-ar_color3" /> Hi there!
           </p>
           <p className="font-light py-4 leading-none">
             <TypeAnimation
@@ -56,7 +64,7 @@ export default function MainView() {
             />
           </p>
         </div>
-        <div className="w-[35%] relative flex justify-center text-ar_neutral">
+        <div className={`w-[35%] relative flex justify-center `}>
           {/* @ts-ignore */}
           <ReactCurvedText
             width={width}
@@ -69,7 +77,7 @@ export default function MainView() {
             reversed={reversed}
             text={text}
             textProps={textProps}
-            textPathProps={textPathProps}
+            textPathProps={chn}
             tspanProps={tspanProps}
             ellipseProps={ellipseProps}
             svgProps={{ className: "rotating-curved-text absolute " }}

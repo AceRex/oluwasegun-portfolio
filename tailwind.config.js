@@ -8,8 +8,10 @@ module.exports = {
       ar_color3: "#7A0BC0",
       ar_color4: "#FA58B6",
       ar_neutral: "#ffffff",
+      ar_neutral_alpha: "#eeeeee"
     },
     extend: {},
   },
   plugins: [],
+  darkMode: 'class',
 };

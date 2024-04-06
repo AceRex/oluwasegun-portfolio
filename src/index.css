@@ -24,6 +24,7 @@
   span {
     @apply dark:text-ar_neutral text-ar_color1;
   }
+ 
   .rotating-curved-text {
     -webkit-animation: spin 30s linear infinite;
     -moz-animation: spin 30s linear infinite;
