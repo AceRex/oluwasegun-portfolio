@@ -13,7 +13,7 @@ import { Tooltip } from "react-tooltip";
 export default function ViewSideNav() {
   return (
     <div className="w-[5%] rounded-lg">
-      <div className="w-[100%] flex flex-col py-24 text-xl justify-between items-center h-[100%] bg-ar_neutral/20 text-center text-ar_neutral/80 rounded-lg p-5">
+      <div className="w-[100%] flex flex-col py-24 text-xl justify-between items-center h-[100%] dark:bg-ar_neutral/20 bg-ar_neutral text-center dark:text-ar_neutral/80 text-ar_color3 rounded-lg p-5">
         
         <a id="toolTip"  data-tooltip-content="About Me" className="hover:text-ar_color4"><GoLightBulb /></a>
         <a id="toolTip" data-tooltip-content="My Skill" className="hover:text-ar_color4"> <FaRegStar /></a>

@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import ReactCurvedText from "react-curved-text";
 // @ts-ignore
 import Logo from "../../assets/aceLogos/ace3.png";
-import LogoW from "../../assets/aceLogos/ace2.png";
+import LogoW from "../../assets/aceLogos/AcelogoWhite.png";
 import {
   width,
   height,
@@ -85,7 +85,7 @@ export default function MainView() {
           {theme != "dark" ? (
             <motion.img
               className="absolute top-8 w-[180px]"
-              src={Logo}
+              src={LogoW}
               alt="Your Logo"
               initial={{ rotate: 0 }}
               animate={{
@@ -96,7 +96,7 @@ export default function MainView() {
           ) : (
             <motion.img
               className="absolute top-8 w-[180px]"
-              src={LogoW}
+              src={Logo}
               alt="Your Logo"
               initial={{ rotate: 0 }}
               animate={{
@@ -107,36 +107,36 @@ export default function MainView() {
           )}
         </div>
       </div>
-      <div className="flex flex-col rounded-lg p-4 bg-ar_color1">
+      <div className="flex flex-col rounded-lg p-4 dark:bg-ar_color1 bg-ar_neutral_alpha">
         <p>
           {"<"}
-          <span className="text-ar_color4">{"head"}</span>
+          <span className="text-ar_color4 dark:text-ar_color4">{"head"}</span>
           {">"}
         </p>
         <p className="ml-8">
           {"<"}
-          <span className="text-ar_color4">title</span>
+          <span className="text-ar_color4 dark:text-ar_color4">title</span>
           {">"}
-          <span className="text-[#2dd4bf]">{`My Portfolio`}</span>
+          <span className="text-[#2dd4bf] dark:text-[#2dd4bf]">{`My Portfolio`}</span>
           {"</"}
-          <span className="text-ar_color4">title</span>
+          <span className="text-ar_color4 dark:text-ar_color4">title</span>
           {">"}
         </p>
         <p className="ml-8">
           {"<"}
-          <span className="text-ar_color4">link</span>
+          <span className="text-ar_color4 dark:text-ar_color4">link</span>
           {` rel="Hire_Me" href="`}
-          <span className="text-[#f59e0b]">contact_below</span>
+          <span className="text-[#f59e0b] dark:text-[#f59e0b]">contact_below</span>
           {`"/>`}
         </p>
         <p>
           {"</"}
-          <span className="text-ar_color4">{"head"}</span>
+          <span className="text-ar_color4 dark:text-ar_color4">{"head"}</span>
           {">"}
         </p>
         <p>
           {"<"}
-          <span className="text-ar_color4">{"body"}</span>
+          <span className="text-ar_color4 dark:text-ar_color4">{"body"}</span>
           {">"}
         </p>
       </div>

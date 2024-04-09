@@ -5,9 +5,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import { useTheme } from "../UseContext/context.tsx";
 
 export default function SideProfile() {
-  
+  const { hireMeModal, setHireMeModal } = useTheme();
+
+  const handleClick = () => {
+    setHireMeModal(!hireMeModal);
+  };
   return (
     <>
       <div className=" w-[200px] h-[200px] mt-5 rounded-lg overflow-hidden m-auto dark:bg-ar_color3 bg-ar_color4">
@@ -26,10 +31,17 @@ export default function SideProfile() {
         </p>
       </div>
       <div className="mt-10 flex flex-row gap-2 w-[100%] m-auto">
-        <button className="dark:bg-ar_color4 bg-ar_color3 hover:dark:bg-ar_color4/90 hover:dark:bg-ar_color3/50 py-3 px-4 rounded-lg text-ar_neutral font-semibold w-[50%]">
+        <button
+          onClick={handleClick}
+          className="dark:bg-ar_color4 bg-ar_color3 hover:dark:bg-ar_color4/90 hover:dark:bg-ar_color3/50 py-3 px-4 rounded-lg text-ar_neutral font-semibold w-[50%]"
+        >
           Hire Me!
         </button>
-        <a href="/assets/CV/AREOLUWASEGUNCV.pdf" download={"ARE_Oluwasegun_CV.pdf"} className="border dark:border-ar_neutral/40 border-ar_color2 py-4 px-3 rounded-lg text-center dark:text-ar_neutral/70 text-ar_color2 font-semibold w-[50%]">
+        <a
+          href="/assets/CV/AREOLUWASEGUNCV.pdf"
+          download={"ARE_Oluwasegun_CV.pdf"}
+          className="border dark:border-ar_neutral/40 border-ar_color2 py-4 px-3 rounded-lg text-center dark:text-ar_neutral/70 text-ar_color2 font-semibold w-[50%]"
+        >
           Download CV
         </a>
       </div>
