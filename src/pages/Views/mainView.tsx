@@ -28,11 +28,10 @@ import { useTheme } from "../../UseContext/context.tsx";
 
 export default function MainView() {
   const { theme } = useTheme();
-
   return (
-    <div className="w-[95%] flex flex-col gap-7 p-12 dark:bg-ar_neutral/10 bg-ar_neutral backdrop-blur-lg rounded-lg">
-      <div className="flex flex-row gap-12 w-[100%] h-[90%] overflow-hidden">
-        <div className="flex flex-col w-[75%] ">
+    <div className="w-[95%] max-sm:w-[100%] flex flex-col gap-7 relative p-12 max-sm:p-5  dark:bg-ar_neutral/10 bg-ar_neutral backdrop-blur-lg rounded-lg">
+      <div className="flex flex-row gap-12 w-[100%] h-[90%] max-sm:mt-5 overflow-hidden">
+        <div className="flex flex-col w-[75%] max-sm:w-[100%] ">
           <p className="flex flex-row gap-2 dark:text-ar_neutral/70 text-ar_color4 font-normal">
             <IoHandLeftOutline
               size={20}
@@ -40,7 +39,7 @@ export default function MainView() {
             />{" "}
             Hi there!
           </p>
-          <p className="font-light py-4 leading-none">
+          <p className="font-light py-4 max-sm:h-[45vh] max-sm:py-2 leading-none">
             <TypeAnimation
               sequence={[
                 `I turn beautiful designs into functional realities, `,
@@ -64,7 +63,7 @@ export default function MainView() {
             />
           </p>
         </div>
-        <div className={`w-[35%] relative flex justify-center `}>
+        <div className={`w-[35%] max-sm:w-[100%] max-sm:absolute max-sm:-top-[55em] max-sm:left-[12rem] flex justify-center `}>
           {/* @ts-ignore */}
           <ReactCurvedText
             width={width}
@@ -107,7 +106,7 @@ export default function MainView() {
           )}
         </div>
       </div>
-      <div className="flex flex-col rounded-lg p-4 dark:bg-ar_color1 bg-ar_neutral_alpha">
+      <div className="flex flex-col  rounded-lg p-4 dark:bg-ar_color1 bg-ar_neutral_alpha">
         <p>
           {"<"}
           <span className="text-ar_color4 dark:text-ar_color4">{"head"}</span>
@@ -140,12 +139,12 @@ export default function MainView() {
           {">"}
         </p>
       </div>
-      <div className="flex flex-row gap-5">
-        <div className="w-[60%] flex flex-row items-center">
+      <div className="flex flex-row max-sm:flex-col gap-5">
+        <div className="w-[60%] max-sm:w-[100%] flex flex-row items-center">
           <div className="w-[20%] text-ar_color4">
             <MdOutlineMarkEmailUnread size={60} />
           </div>
-          <div className="w-[80%] flex flex-col text-lg text-ar_color4">
+          <div className="w-[80%] flex flex-col text-lg max-sm:text-center max-sm:text-base text-ar_color4">
             <a href="mailto: johnsonare2207@gmail.com">
               Johnsonare2207@gmail.com
             </a>
@@ -154,7 +153,7 @@ export default function MainView() {
             </a>
           </div>
         </div>
-        <div className="w-[40%] flex flex-row items-center">
+        <div className="w-[40%] max-sm:w-[100%] flex flex-row max-sm:text-center max-sm:text-base items-center">
           <div className="w-[20%] text-ar_color4">
             <MdOutlinePhoneInTalk size={50} />
           </div>
