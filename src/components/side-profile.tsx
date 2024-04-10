@@ -38,8 +38,9 @@ export default function SideProfile() {
           Hire Me!
         </button>
         <a
-          href="/assets/CV/AREOLUWASEGUNCV.pdf"
-          download={"ARE_Oluwasegun_CV.pdf"}
+          href="https://drive.google.com/file/d/147MXzK_Vnrc73XSBH7-d4B3tnQpS4flD/view?usp=sharing"
+          target="_blank"
+          download
           className="border dark:border-ar_neutral/40 border-ar_color2 py-4 px-3 rounded-lg text-center dark:text-ar_neutral/70 text-ar_color2 font-semibold w-[50%] max-sm:w-[100%]"
         >
           Download CV
