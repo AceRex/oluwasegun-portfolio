@@ -83,7 +83,7 @@ export default function MainView() {
           />
           {theme != "dark" ? (
             <motion.img
-              className="absolute top-8 w-[180px]"
+              className="absolute top-20 max-sm:top-5 w-[180px]"
               src={LogoW}
               alt="Your Logo"
               initial={{ rotate: 0 }}
@@ -94,7 +94,7 @@ export default function MainView() {
             />
           ) : (
             <motion.img
-              className="absolute top-8 w-[180px]"
+              className="absolute top-20 max-sm:top-5 w-[180px]"
               src={Logo}
               alt="Your Logo"
               initial={{ rotate: 0 }}
