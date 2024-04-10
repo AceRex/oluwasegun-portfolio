@@ -45,7 +45,7 @@ export default function SideProfile() {
           Download CV
         </a>
       </div>
-      <div className="mt-10 max-sm:-mt-1 w-[90%] m-auto">
+      <div className="mt-10 max-sm:mt-5 w-[90%] m-auto">
         <p className="text-center dark:text-ar_neutral/70 text-ar_color1">
           Frontend major, experienced in Mongo DB, Node JS, Express JS and Nest
           JS backend.

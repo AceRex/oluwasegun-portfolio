@@ -144,7 +144,7 @@ export default function MainView() {
           <div className="w-[20%] text-ar_color4">
             <MdOutlineMarkEmailUnread size={60} />
           </div>
-          <div className="w-[80%] flex flex-col text-lg max-sm:text-center max-sm:text-base text-ar_color4">
+          <div className="w-[80%] max-sm:text-start flex flex-col text-lg max-sm:text-base text-ar_color4">
             <a href="mailto: johnsonare2207@gmail.com">
               Johnsonare2207@gmail.com
             </a>
@@ -157,7 +157,7 @@ export default function MainView() {
           <div className="w-[20%] text-ar_color4">
             <MdOutlinePhoneInTalk size={50} />
           </div>
-          <div className="w-[80%] flex flex-col text-lg text-ar_color4">
+          <div className="w-[80%] max-sm:text-start flex flex-col text-lg text-ar_color4">
             <a href="tel:+2347035042130">+234 703 504 2130</a>
             <a href="tel:+2348088735524">+234 808 873 5524</a>
           </div>
