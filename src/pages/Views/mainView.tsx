@@ -58,7 +58,7 @@ export default function MainView() {
                 2000,
               ]}
               speed={50}
-              style={{ fontSize: "3rem" }}
+              style={{ fontSize: "50px" }}
               repeat={Infinity}
             />
           </p>
