@@ -15,7 +15,7 @@ export default function SideProfile() {
   };
   return (
     <>
-      <div className=" w-[200px] h-[200px] max-sm:w-[100%] max-sm:h-[200px] mt-0 rounded-lg overflow-hidden m-auto dark:bg-ar_color3 bg-ar_color4">
+      <div className=" w-[300px] h-[300px] max-sm:w-[100%] max-sm:h-[200px] mt-0 rounded-lg overflow-hidden m-auto dark:bg-ar_color3 bg-ar_color4">
         <img
           src={ProfileImage}
           alt="Profile-photo"
