@@ -31,7 +31,7 @@ export default function SideProfile() {
           <img
             src={ProfileImage}
             alt="Profile-photo"
-            className="dark:grayscale max-sm:w-[270px] -mt-2 max-sm:m-auto max-sm:-mt-7"
+            className="dark:grayscale max-sm:w-[270px] -mt-2 max-sm:m-auto max-sm:-mt-4"
           />
         </div>
       </div>
