@@ -52,7 +52,7 @@ export default function SideProfile() {
             Hire Me!
           </button>
           <a
-            href="https://drive.google.com/file/d/1CfMePOkg9uVjAhcBNWb6vSsjQUXhcHzB/view?usp=sharing"
+            href="https://drive.google.com/file/d/1iipZYH_9D_33sTmRiZuypJMEuwi0l4W5/view?usp=drive_link"
             target="_blank"
             download
             className="border dark:border-ar_neutral/40 border-ar_color2 py-4 px-3 rounded-lg text-center dark:text-ar_neutral/70 text-ar_color2 font-semibold w-[50%] max-sm:w-[100%]"
