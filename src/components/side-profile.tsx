@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { useTheme } from "../UseContext/context.tsx";
 import SideNavImg from "../assets/sidenavBg.png";
+import { motion } from "framer-motion";
 
 export default function SideProfile() {
   const { hireMeModal, setHireMeModal } = useTheme();
@@ -26,14 +27,35 @@ export default function SideProfile() {
         }}
       ></div>
       <div className="w-[180px] h-[180px] m-auto rounded-full bg-ar_neutral_alpha  -mt-12 p-1">
-        <div className=" w-[100%] h-[100%] overflow-hidden bg-ar_neutral/50 dark:bg-ar_color4 rounded-full">
+        <motion.div
+         
+          className=" w-[100%] h-[100%] overflow-hidden bg-ar_neutral/50 dark:bg-ar_color4 rounded-full"
+        >
           {/*  eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-          <img
+          <motion.img
+          animate={{
+            scale: [1, 0, 0, 1, 1],
+            rotateY: [0, 0, 180, 180, 0],
+          }}
+          transition={{
+            scale: {
+              duration: 0.5,
+              times: [0, 0.25, 0.5, 0.75, 1],
+              repeat: Infinity,
+              repeatDelay: 10,
+            },
+            rotateY: {
+              duration: 1,
+              times: [0, 0.25, 0.5, 0.75, 1],
+              repeat: Infinity,
+              repeatDelay: 10,
+            },
+          }}
             src={ProfileImage}
             alt="Profile-photo"
             className="dark:grayscale max-sm:w-[270px] -mt-2 max-sm:m-auto max-sm:-mt-4"
           />
-        </div>
+        </motion.div>
       </div>
       <div className="px-12">
         <div className="mt-5 ">
