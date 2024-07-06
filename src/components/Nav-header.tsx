@@ -7,13 +7,14 @@ import { MdLightMode } from "react-icons/md";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdDarkMode } from "react-icons/md";
 import { useTheme } from "../UseContext/context.tsx";
+import { Link } from "react-router-dom";
 
 export default function NavHeader() {
   const [darkMode, setDarkMode] = useState(false);
-  const {toggleTheme} = useTheme()
+  const { toggleTheme } = useTheme();
 
   const toggleDarkMode = () => {
-    toggleTheme()
+    toggleTheme();
     setDarkMode(!darkMode);
     document.body.classList.toggle("dark");
   };
@@ -38,8 +39,13 @@ export default function NavHeader() {
             )}
           </div>
           <ul className="p-5 flex flex-row gap-6 dark:text-ar_neutral/70 text-ar_color3 text-sm font-normal">
-            <li className="max-sm:hidden">Home</li>
-            <li>Hire Me!</li>
+            <Link to="/">
+              <li className="max-sm:hidden">Home</li>
+            </Link>
+            <Link to="#">
+              {" "}
+              <li>Hire Me!</li>
+            </Link>
           </ul>
         </div>
         <div
